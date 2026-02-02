@@ -4,19 +4,13 @@
       "route": "/.well-known/mta-sts.txt",
       "serve": "/.well-known/mta-sts.txt",
       "headers": {
-        "Content-Type": "text/plain"
+        "Content-Type": "text/plain",
+        "Cache-Control": "max-age=300"
       }
     },
     {
-      "route": "/.well-known/mta-sts-*.txt",
-      "serve": "/.well-known/mta-sts-*.txt",
-      "headers": {
-        "Content-Type": "text/plain"
-      }
-    },
-    {
-      "route": "/.well-known/*",
-      "serve": "/.well-known/*",
+      "route": "/.well-known/*.txt",
+      "serve": "/.well-known/*.txt",
       "headers": {
         "Content-Type": "text/plain"
       }
