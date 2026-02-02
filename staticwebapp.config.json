@@ -2,25 +2,15 @@
   "routes": [
     {
       "route": "/.well-known/mta-sts.txt",
-      "serve": "/.well-known/mta-sts-ethc-co-nz.txt",
-      "headers": {
-        "Content-Type": "text/plain"
-      }
-    },
-    {
-      "route": "/.well-known/mta-sts-*.txt",
-      "serve": "/.well-known/mta-sts-*.txt",
-      "headers": {
-        "Content-Type": "text/plain"
-      }
+      "serve": "/.well-known/mta-sts-ethc-co-nz.txt"
     }
   ],
+  "mimeTypes": {
+    ".txt": "text/plain"
+  },
   "responseOverrides": {
     "404": {
       "rewrite": "/404.html"
     }
-  },
-  "mimeTypes": {
-    ".txt": "text/plain"
   }
 }
