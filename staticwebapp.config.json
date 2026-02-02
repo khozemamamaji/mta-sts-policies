@@ -1,0 +1,16 @@
+{
+  "routes": [
+    {
+      "route": "/.well-known/mta-sts.txt",
+      "rewrite": "/.well-known/mta-sts-{hostname}.txt"
+    }
+  ],
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404.html"
+    }
+  },
+  "mimeTypes": {
+    ".txt": "text/plain"
+  }
+}

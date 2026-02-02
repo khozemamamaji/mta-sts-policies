@@ -1,0 +1,5 @@
+version: STSv1
+mode: testing
+mx: tamakihealth.in.tmes-anz.trendmicro.com
+mx: wgmc-co-nz.mail.protection.outlook.com
+max_age: 604800
