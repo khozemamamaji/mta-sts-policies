@@ -2,15 +2,14 @@
   "routes": [
     {
       "route": "/.well-known/mta-sts.txt",
-      "serve": "/.well-known/mta-sts.txt",
+      "serve": "/.well-known/mta-sts-ethc-co-nz.txt",
       "headers": {
-        "Content-Type": "text/plain",
-        "Cache-Control": "max-age=300"
+        "Content-Type": "text/plain"
       }
     },
     {
-      "route": "/.well-known/*.txt",
-      "serve": "/.well-known/*.txt",
+      "route": "/.well-known/mta-sts-*.txt",
+      "serve": "/.well-known/mta-sts-*.txt",
       "headers": {
         "Content-Type": "text/plain"
       }
