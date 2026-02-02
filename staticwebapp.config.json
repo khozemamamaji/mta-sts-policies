@@ -2,15 +2,13 @@
   "routes": [
     {
       "route": "/.well-known/mta-sts.txt",
-      "serve": "/.well-known/mta-sts-ethc-co-nz.txt"
+      "serve": "/mta-sts.txt",
+      "headers": {
+        "Content-Type": "text/plain"
+      }
     }
   ],
   "mimeTypes": {
     ".txt": "text/plain"
-  },
-  "responseOverrides": {
-    "404": {
-      "rewrite": "/404.html"
-    }
   }
 }
