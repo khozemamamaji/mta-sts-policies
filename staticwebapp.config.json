@@ -2,7 +2,24 @@
   "routes": [
     {
       "route": "/.well-known/mta-sts.txt",
-      "rewrite": "/.well-known/mta-sts-{hostname}.txt"
+      "serve": "/.well-known/mta-sts.txt",
+      "headers": {
+        "Content-Type": "text/plain"
+      }
+    },
+    {
+      "route": "/.well-known/mta-sts-*.txt",
+      "serve": "/.well-known/mta-sts-*.txt",
+      "headers": {
+        "Content-Type": "text/plain"
+      }
+    },
+    {
+      "route": "/.well-known/*",
+      "serve": "/.well-known/*",
+      "headers": {
+        "Content-Type": "text/plain"
+      }
     }
   ],
   "responseOverrides": {
